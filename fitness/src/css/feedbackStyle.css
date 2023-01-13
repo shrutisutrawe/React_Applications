@@ -1,0 +1,126 @@
+.wrapper .main{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper h2{
+    text-align: center;
+    margin:0 0 0 0;
+}
+.wrapper .form-container{
+    width: 500px;
+    height: 400px;
+    background-color:lightgrey;
+    margin: 20px auto;
+    padding: 20px;   
+}
+
+.wrapper .form-container .form-btn{
+    display: flex;
+    justify-content: center;
+    background-color:#607180;
+    width: 100%;  
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color:white;
+    font-size:1.5rem;
+    align-items: center;
+    max-width: 100%;
+}
+.wrapper mark{
+    background: lightgray;
+    color:red;
+}
+.wrapper .form-group label{
+    margin:2rem 0;
+    font-size:1.4rem;
+}
+.wrapper .form-container .form-comment {
+    margin:0.5rem 0;
+    height:6rem;
+    width:100%;
+    font-size:1rem;
+    font-family: sans-serif;
+}
+.wrapper .form-container .form-control{
+    margin:0.5rem 0;
+    font-size:1rem;
+}
+.wrapper .view-container{
+    width: 500px;    
+    background-color:lightgray;
+    margin: 20px auto;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.wrapper .view-container p{
+    word-wrap: break-word;
+     font-size:1rem;
+     
+}
+
+.wrapper .form-error{
+    background: #607180;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.feedback-footer{
+    margin-top: 1rem;
+    padding: 0.1rem;
+    background-color: #308688;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+}
+.feedback-footer p{
+    padding-left:2rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:1140px) {
+    .wrapper .main{
+        display: block;
+    }
+    
+    .form-container{
+        height:500px;
+        position: relative;
+        max-width:100%;
+    }
+    .wrapper .form-container .form-btn{
+        display: inline-block;
+        justify-content: center;
+        background-color:#607180;
+        width: 100%;  
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color:white;
+        font-size:1.5rem;
+        align-items: center;
+        max-width: 100%;
+    }
+    .feedback-footer{
+        margin-top: 1rem;
+        padding: 0.1rem;
+        background-color: #308688;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+    }
+    .feedback-footer p{
+        padding-left:2rem;
+        font-size: 1rem;
+    }
+}

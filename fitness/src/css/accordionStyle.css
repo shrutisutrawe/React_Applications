@@ -1,0 +1,73 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accordion-container {
+    width: 90vw;
+    margin: 5rem auto;
+    background: white;
+    border-radius: 1px;
+    padding: 2.5rem 2rem;
+    display: grid;
+    gap: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .accordion-container h3 {
+    text-align: center;
+    line-height: 1.2;
+    font-weight:bolder;
+    font-size:2.5rem;
+
+  }
+  @media screen and (min-width: 992px) {
+    .accordion-container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .question {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+  }
+  .question h4 {
+    text-transform: none;
+    line-height: 1.5;
+    font-size:1rem;
+  }
+  .question p {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  .question header {
+      background:lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question header h4 {
+      padding:1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .accordion-btn {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    margin-left: 0.1rem;
+    align-self: left;
+    min-width: 2rem;
+    font-size:1.5rem;
+  }
